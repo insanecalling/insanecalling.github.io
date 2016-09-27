@@ -1,0 +1,1 @@
+$(document).ready(function(){$(window).height()+100<$(document).height()&&$("#top-link-block").removeClass("hidden").affix({offset:{top:100}}),$("#back-to-top-button").click(function(){return $("html,body").animate({scrollTop:0},"fast"),!1}).mouseup(function(){this.blur()})});

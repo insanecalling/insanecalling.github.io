@@ -1,0 +1,8 @@
+/*!
+ * jPushMenu.js
+ * 1.1.1
+ * @author: takien
+ * http://takien.com
+ * Original version (pure JS) is created by Mary Lou http://tympanus.net/
+ */
+!function(e){e.fn.jPushMenu=function(t){var n=e.extend({},e.fn.jPushMenu.defaultOptions,t);e("body").addClass(n.bodyClass),e(this).addClass("jPushMenuBtn"),e(this).click(function(){var t="",i="";return e(this).is("."+n.showLeftClass)?(t=".cbp-spmenu-left",i="toright"):e(this).is("."+n.showRightClass)?(t=".cbp-spmenu-right",i="toleft"):e(this).is("."+n.showTopClass)?t=".cbp-spmenu-top":e(this).is("."+n.showBottomClass)&&(t=".cbp-spmenu-bottom"),e(this).toggleClass(n.activeClass),e(t).toggleClass(n.menuOpenClass),e(this).is("."+n.pushBodyClass)&&e("body").toggleClass("cbp-spmenu-push-"+i),e(".jPushMenuBtn").not(e(this)).toggleClass("disabled"),!1});var i={close:function(){e(".jPushMenuBtn,body,.cbp-spmenu").removeClass("disabled active cbp-spmenu-open cbp-spmenu-push-toleft cbp-spmenu-push-toright")}};n.closeOnResize&&e(window).resize(function(){i.close()}),n.closeOnClickOutside&&(e(document).click(function(){i.close()}),e(document).on("click touchstart",function(){i.close()}),e(".cbp-spmenu,.toggle-menu").click(function(e){e.stopPropagation()}),e(".cbp-spmenu,.toggle-menu").on("click touchstart",function(e){e.stopPropagation()})),n.closeOnClickLink&&e(".cbp-spmenu a").on("click",function(){i.close()})},e.fn.jPushMenu.defaultOptions={bodyClass:"cbp-spmenu-push",activeClass:"menu-active",showLeftClass:"menu-left",showRightClass:"menu-right",showTopClass:"menu-top",showBottomClass:"menu-bottom",menuOpenClass:"cbp-spmenu-open",pushBodyClass:"push-body",closeOnResize:!0,closeOnClickOutside:!0,closeOnClickInside:!0,closeOnClickLink:!0}}(jQuery);
