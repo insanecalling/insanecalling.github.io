@@ -1,0 +1,1 @@
+var _paq=_paq||[];_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){_paq.push(["setTrackerUrl","//keretapi.eu/pt/pt.php"]),_paq.push(["setSiteId","1"]);var e=document,t=e.getElementsByTagName("script")[0],p=e.createElement("script");p.src="//keretapi.eu/pt/pt.js",p.async=!0,p.defer=!0,p.type="text/javascript",t.parentNode.insertBefore(p,t)}();
